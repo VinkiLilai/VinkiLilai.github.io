@@ -1,0 +1,64 @@
+черновик
+1)
+<nav class="button">
+		  <ul>
+		    <li><a href="#"><i class="fa fa-home fa-fw"></i>Home</a></li>
+		    <li><a href="#">Work</a></li>
+		    <ul class="submenu">
+		        <li><a href="">Item 1</a></li>
+		        <li><a href="">Item 2</a></li>
+		    <li><a href="#">About</a></li>
+		    <li><a href="#">Blog</a></li>
+		    <li><a href="#">Contact</a></li>
+		  </ul>
+		</nav>
+2)
+.button ul {
+
+  background: #D4E7EE;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 960px;
+  opacity: .3; /*прозрачность*/
+
+}
+.button li {
+  float: left;
+}
+.button a {
+  position: relative;
+  display: block;
+  padding: 1em;
+  border-right: 1px solid #ADC0CE;
+  background: rgba(173, 192, 206, .3);
+  color: #29838C;
+  width: 159px;
+  margin: 0px;
+
+}
+.button a:hover {background: #ADC0CE}
+
+
+#5f1b1b - бордо
+#a76cc5 - старый
+
+
+
+
+ <div class="quizsection">
+ <br>
+    <p>Выберете верные утверждения:</p>
+    <div class="answer">
+        <input name="q4" value="value2" id="value1" type="checkbox"  /> <i>Измерить единицу - это значит сравнить ее с имеющейся величиной</i>
+    </div>
+    <div class="answer">
+        <input name="q4" value="value1" id="value2" type="checkbox" /> <i>В Международной системе единиц принято единицы времени записывать как "сек"</i>
+    </div>
+    <div class="answer">
+        <input name="q4" value="value1" id="value3" type="checkbox" /> <i>Приставка "Мега" является дольной</i>
+    </div>
+    <div class="answer">
+        <input name="q4" value="value1" id="value4" type="checkbox" /> <i>Чтобы перевести килограмм в систему СИ, небходимо умножить число на 1000</i>
+    </div>
+</div>

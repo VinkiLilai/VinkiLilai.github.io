@@ -1,0 +1,262 @@
+<!DOCTYPE>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>"Эврика"</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Comfortaa|Lobster&display=swap&subset=cyrillic" rel="stylesheet">
+	<script src="script.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="page">
+
+		<div class="head_line">
+			<p><tab>"Эврика": физика это сложно или просто интересно?</p>
+		</div>
+
+		<nav class="buttons">
+
+		  <ul class="topmenu">
+
+		    <li><a class="act" href="index.html">Главная</a></li>
+		    <li><a href="#">Теория</a>
+		    	<ul class="submenu">
+			        <li><a href="theory.html">Теория</a></li>
+			        <li><a href="tab.html">Таблицы значений</a></li>
+			        <li><a href="wordlist.html">Словарик</a></li>
+			      </ul>
+		    </li>
+
+		    <li><a href="#">Задания</a>
+			      <ul class="submenu">
+			        <li><a href="topics.html">Темы</a></li>
+			        <li><a href="tasks.html">Задачи</a></li>
+			        <li><a href="test.html">Тесты</a></li>
+			      </ul>
+		    </li>
+
+		    <li><a href="lab.html">Лабораторные работы</a>
+			    
+				  </li>
+
+		    <li><a href="#">Физика в жизни</a>
+		    	<ul class="submenu">
+			        <li><a href="">В профессиях</a></li>
+			      </ul>
+			  </li>
+		  </ul>
+		</nav>
+	    <div class="probel"></div>
+	   		 
+  
+</head>
+ 
+<body>
+ 
+<h1>Тест по теме: "Физика как наука"</h1>
+<p>Выберете только 1 правильный ответ. Если есть несколько правильных, то выберете наиболее полное. В тесте все ответы могу оказаться правильными или неверными.</p>
+ <style>
+	    	.correct{
+	    		color: green;
+	    	}
+	    	.incorrect{
+	    		color: red;
+	    	}
+	    </style>
+<section class="main">
+ 
+<form name="quiz" action="javascript:check();" class="quizform">
+ 
+<div class="quizsection">
+ 
+ <br>
+    <p>Физика - это...</p>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value1" type="radio"  /> <i>Область естествознания: наука о простейших и вместе с тем наиболее общих законах природы, о материи, её структуре, движении и составе</i>
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value2" id="value2" type="radio" /> <i>Область естествознания</i>
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value3" type="radio" /> <i>Наука о веществах, их составе и строении, их свойствах</i>
+    </div>
+ 
+    <div class="answer">
+        <input name="q1" value="value1" id="value4" type="radio" /> <i>Наука, изучающая явления, связаные с изменением состава и свойствами веществ</i>
+    </div>
+ 
+</div>
+ 
+<div class="quizsection">
+ <br>
+    <p>Выберете из списка физические явления:</p>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value1" type="checkbox"  /> <i>Горение спички</i>
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value2" id="value2" type="checkbox" /> <i font-size = "40px">Сублимация, десублимация, плавление, парообразование</i>
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value1" id="value3" type="checkbox" /> <i>Обмен веществ</i>
+    </div>
+ 
+    <div class="answer">
+        <input name="q2" value="value2" id="value4" type="checkbox" /> <i>Движение тележки</i>
+    </div>
+ </div>
+ 
+<div class="quizsection">
+ <br>
+    <p>Выберете физические тела:</p>
+    <div class="answer">
+        <input name="q3" value="value1" id="value1" type="checkbox" /> <i>Железо</i>
+    </div>
+    <div class="answer">
+        <input name="q3" value="value2" id="value2" type="checkbox" /> <i>Слиток железа</i>
+    </div>
+    <div class="answer">
+        <input name="q3" value="value2" id="value3" type="checkbox" /> <i>Капля воды</i>
+    </div>
+    <div class="answer">
+        <input name="q3" value="value2" id="value4" type="checkbox" /> <i>Кусок пластелина</i>
+    </div>
+</div>
+ 
+ 
+ <div class="quizsection">
+ <br>
+    <p>Даны два утверждения: <br>a)Погрешность следует писать при прямых измерениях <br>б) Погрешность следует писать при косвенных измерениях</p>
+    <div class="answer">
+        <input name="q5" value="value2" id="value1" type="radio" /> <i>Верно только А</i>
+    </div>
+    <div class="answer">
+        <input name="q5" value="value1" id="value2" type="radio" /> <i>Верно только Б</i>
+    </div>
+    <div class="answer">
+        <input name="q5" value="value1" id="value3" type="radio" /> <i>Оба варианта ответа верны</i>
+    </div>
+    <div class="answer">
+        <input name="q5" value="value1" id="value4" type="radio" /> <i>Оба варианта ответа неверны</i>
+    </div>
+	</div>
+ 
+ 
+ <div class="button" id="button">Проверка</div>
+</form>
+ 
+</section>
+ 
+<script type="text/javascript">
+ 
+  var result;
+    
+   function check()
+ 
+   {
+ 
+      var question;
+      var value1;
+      var value2;
+       
+       
+      question = 1;
+      value1 = 0;
+      value2 = 0;
+       
+       
+      result = "";
+ 
+      var choice;
+       
+      for (question = 1; question <= 2; question++) {
+         var q = document.forms['quiz'].elements['q'+question];
+            for (var i = 0; i < q.length; i++) {
+               if (q[i].checked) {
+                  choice = q[i].value;
+               }
+            }
+            if (choice == "value1") {
+               value1++;
+            }
+            if (choice == "value2") {
+               value2++;
+            }
+         }
+
+var answer = {2:true, 4:true};
+         function checkAnswer() {
+    // считаем что ответы правильные
+
+    var error = false;
+    // чекбоксы
+    var inputs = document.getElementsByType('checkbox');
+    for (var i = 0; i < inputs.length; i++) {
+        // галка
+        var checked = inputs[i].checked;
+        // является ли вариант правильным
+        var right = answer[i+1] == true;
+        // если отметка не является правильной
+        if (checked !== right) {
+            error = true;
+            // дальше можно не проверять
+            break;
+        }
+    }
+
+ 
+      if (value2 == 0) {
+         result = "ocenka2";
+      }
+ 
+      else if (value2 == 1) {
+         result = "ocenka3";
+ 
+      }
+ 
+      else if (value2 == 2) {
+         result = "ocenka4";
+ 
+      }
+ 
+      else if (value2 == 3) {
+         result = "ocenka5";
+ 
+      }
+       else {
+         result = "404";
+      }
+ 
+      window.location = result + '.html';
+ 
+   }
+   ;
+ 
+</script>
+			<br><br><br>
+			
+		</div>
+<footer>
+	<br>
+	<a href="#">Информационные ресурсы</a>
+	<a href="opros.html">Опрос</a>
+	<div class="info">
+	<p>&nbsp&nbsp&nbsp Copyright</p>
+	<p>&nbsp&nbsp&nbsp Author: Gorodnichaya Anastasia</p>
+</div>
+
+</footer>
+
+	
+</body>
+
+</html>
+
+

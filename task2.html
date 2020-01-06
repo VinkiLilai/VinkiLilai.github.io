@@ -1,0 +1,204 @@
+<!DOCTYPE>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>"Эврика"</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Caveat|Comfortaa|Lobster&display=swap&subset=cyrillic" rel="stylesheet">
+	<script src="script.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+
+</head>
+<body>
+	<div class="page">
+
+		<div class="head_line">
+			<p><tab>"Эврика": физика это сложно или просто интересно?</p>
+		</div>
+
+		<nav class="buttons">
+
+		  <ul class="topmenu">
+
+		    <li><a class="act" href="index.html">Главная</a></li>
+		    <li><a href="#">Теория</a>
+		    	<ul class="submenu">
+			        <li><a href="theory.html">Теория</a></li>
+			        <li><a href="tab.html">Таблицы значений</a></li>
+			        <li><a href="wordlist.html">Словарик</a></li>
+			      </ul>
+		    </li>
+
+		    <li><a href="#">Задания</a>
+			      <ul class="submenu">
+			        <li><a href="topics.html">Темы</a></li>
+			        <li><a href="tasks.html">Задачи</a></li>
+			        <li><a href="test.html">Тесты</a></li>
+			      </ul>
+		    </li>
+
+		    <li><a href="lab.html">Лабораторные работы</a>
+			    
+				  </li>
+
+		    <li><a href="#">Физика в жизни</a>
+		    	<ul class="submenu">
+			        <li><a href="">В профессиях</a></li>
+			      </ul>
+			  </li>
+		  </ul>
+		</nav>
+	    <div class="probel"></div>
+
+<br>
+	    <h1>Физика как наука</h1> <br>
+	    <h1>Задания на определение цены деления</h1><br>
+	    <p>Найдите цену деления прибора, изображенного на картинке</p>
+	    <br>
+	    <p>В первое поле запишите цену деления, а во вторую - погрешность без указания знаков</p>
+<br>
+	    <style>
+	    	<div> {
+	    		margin-bottom:30px;
+	    	}
+
+	    	.correct{
+	    		border: 2px solid green;
+	    	}
+	    	.incorrect{
+	    		border: 2px solid red;
+	    	}
+	    </style>
+	    
+
+	    <div id="test">
+	    <div>
+	    	<img class="imtask" src="img/cd1.jpg">
+	    	<p>№1</p>
+	    	<input data-right="1">
+	    	<input data-right="0,5">
+	    </div>
+	    <br>
+		<div>
+	    	<p>№2</p>
+	    	<input data-right="0,4">
+	    	<input data-right="0,2">
+	    </div>
+	    <br>
+	    <div>
+	    	<p>№3</p>
+	    	<input data-right="5">
+	    	<input data-right="2,5">
+	    </div>
+	    <br>
+	    <div>
+	    	<p>№4</p>
+	    	<input data-right="2">
+	    	<input data-right="1">
+	    </div>
+	    <br>
+		<div>
+			<img class="imtask" src="img/cd2.png">
+	    	<p>№V</p>
+	    	<input data-right="4">
+	    	<input data-right="2">
+	    </div>
+	    <br>
+	    <div>
+	    	<p>№1</p>
+	    	<input data-right="10">
+	    	<input data-right="5">
+	    </div>
+	    <br>
+	    <div>
+	    	<p>№2</p>
+	    	<input data-right="2">
+	    	<input data-right="1">
+	    </div>
+	    <br>
+		<div>
+	    	<p>№3</p>
+	    	<input data-right="5">
+	    	<input data-right="2,5">
+	    </div>
+	    <br>
+	    <div>
+	    	<img class="imtask1" src="img/cd3.jpg">
+	    	<p>№1</p>
+	    	<input data-right="5">
+	    	<input data-right="2,5">
+	    </div>
+	    <br>
+	    <div>
+	    	<img class="imtask2" src="img/cd5.jpg">
+	    	<p>№1</p>
+	    	<input data-right="0,25">
+	    	<input data-right="0,125">
+	    	<p>№2</p>
+	    	<input data-right="0,1">
+	    	<input data-right="0,05">
+	    </div>
+	    <br>
+	    <div class="button" id="button">check</div>
+	    <a href="tasks.html">На список тестов</a>
+		</div>
+	    <script>
+	    	let button = document.querySelector('#button');
+	   		
+	    	var count = 0;
+
+	   		button.addEventListener('click', function(){
+	   				let inputs = document.querySelectorAll('#test input');
+	   				var count = 0;
+	   			for(let input of inputs){
+	   				input.classList.remove('incorrect');
+	   				input.classList.remove('correct');
+	   				if(input.value == input.dataset.right) {
+	   					input.classList.add('correct');
+	   					count = count + 1;
+	   					
+	   				} else{
+	   					input.classList.add('incorrect');
+	   				}
+	   				
+	   		
+	   			}
+	   			var prosent = count * 100 / 22;
+	   			if (prosent == 100){
+	   				alert("Ваша оценка 5. Процент выполнения - " + prosent + "% (выполнено " + count + " из 22)");
+	   			}
+	   			if ((prosent < 100) && (prosent > 79)){
+	   				alert("Ваша оценка 4. Процент выполнения - " + prosent + "% (выполнено " + count + " из 22)");
+	   			}
+	   			if ((prosent < 80) && (prosent > 64)){
+	   				alert("Ваша оценка 3. Процент выполнения - " + prosent + "% (выполнено " + count + " из 22)");
+	   			}
+	   			if (prosent < 65) {
+	   				alert("Ваша оценка 2. Процент выполнения - " + prosent + "% (выполнено " + count + " из 22)");
+	   			}
+
+	   		});
+
+
+
+	    </script>
+
+			<br><br><br>
+			
+		</div>
+<footer>
+	<br>
+	<a href="#">Информационные ресурсы</a>
+	<a href="opros.html">Опрос</a>
+	<div class="info">
+	<p>&nbsp&nbsp&nbsp Copyright</p>
+	<p>&nbsp&nbsp&nbsp Author: Gorodnichaya Anastasia</p>
+</div>
+
+</footer>
+
+	
+</body>
+
+</html>
+

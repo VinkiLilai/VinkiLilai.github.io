@@ -1,0 +1,459 @@
+body{
+	background-image: url(img/bg3.jpg);
+	height: 100%
+	min-height: 800px;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+@import url(https://fonts.googleapis.com/css?family=Lora);
+@import url('https://fonts.googleapis.com/css?family=Caveat|Comfortaa&display=swap&subset=cyrillic');
+body {margin:0;}
+
+
+.page{
+	background-color: #eee;
+	
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.head_line{
+	display: block;
+	height: 60px;
+	background-color: #a76cc5;
+}
+.head_line p{
+	margin-top: 10px;
+	font-family: "Comfortaa";
+	line-height: 50px;
+	font-size: 20px;
+	text-decoration-color: white;
+	margin-left: 20px;
+}
+nav {
+  width: 660px;
+  margin: 0 auto 30px;
+}
+.article{
+	display: block;
+	width: 960px;
+	height: 100%;
+	min-height: 800px;
+	margin-top: 500px;
+	background-color: #eee;
+}
+ul {
+  list-style: none; 
+  margin: 0;
+  padding: 0;
+}
+.topmenu{
+	width: 960px;
+	margin-left: 0px;
+	 background-color: #a9cc89;
+}
+.buttons{
+	padding: 0px;
+	position: absolute;
+	margin-top: 
+}
+.topmenu > li {
+  display: inline-block;
+  margin-right: 20px;
+  position: relative;
+}
+.topmenu > li:last-child {
+  margin-right: 0;
+}
+a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+}
+.fa {
+  font-family: "FontAwesome";
+  color: inherit;
+  padding-left: 10px;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+   background-color: #a9cc89;
+  opacity: 1;
+}
+/* end button*/
+.buttons ul {
+  background: #E4EFD1;
+}
+
+a{
+	font-size: 30px;
+	font-family: Caveat;
+}
+.buttons ul a {
+  color: #74924C;
+  width: 140px;
+  text-align: center;
+  font-size: 25px;
+  line-height: 100%;
+  font-family: Caveat, format('woff');
+}
+
+.buttons .submenu {
+  visibility: hidden;
+  opacity: 0;
+   background-color: #a9cc89;
+}
+.buttons ul li:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+}
+/*IMAGINE*/
+.imgmain{
+	background-image: url(img/imgmain.ipg);
+	height: 400px;
+	width: 940px;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+	margin-left: 10px;
+	margin-right: auto;
+}
+.present{
+	background-image: url(ЭВРИКА.ipg);
+	height: 500px;
+	width: 940px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.present1{
+	background-image: url(ЭВРИКА.ipg);
+	height: 700px;
+	width: 740px;
+	background-repeat: no-repeat;
+	margin-left: 110px;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.present2{
+	background-image: url(ЭВРИКА.ipg);
+	height: 600px;
+	width: 940px;
+	background-repeat: no-repeat;
+	margin-left: 10px;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+/* END OF IMAGINE*/
+.probel{
+	display: block;
+	height: 80px;
+}
+.page > h1{
+	font-family: Comfortaa;
+	color: #201526/*#5f1b1b*/;
+	text-align: center;
+}
+
+.page > h1:last-child{
+	margin-top: 0px;
+}
+.page > p{
+	font-family: Caveat, format('woff');
+	font-size: 30px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+div > p {
+	font-family: Caveat;
+	font-size: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+footer{
+	height: 110px;
+	width: 960px;
+	background-color: #a76cc5;
+	margin-right: auto;
+	margin-left: auto;
+}
+footer > p {
+	margin-left: 10px;
+}
+
+/*theory*/
+.article-min{
+	display: block;
+	width: 940px;
+	height: 200px;
+	background-color:#a76cc569;
+	margin-top: 20px; 
+	margin-right: 10px;
+	padding: 10px 10px 10px 10px;
+	position: relative;
+}
+.img-min{
+	display: block;
+	height: 180px;
+	width: 290px;
+	background-color: #1b4fc73b;
+	margin-left: 10px;
+	margin-top: 10px;
+	position: absolute;
+}
+.desc-min{
+	width: 610px;
+	height: 180px;
+	display: block;
+	margin-left: 320px;
+	margin-top: 10px;
+	position: absolute;
+	float: left;
+
+}
+/*text*/
+.desc-min > h3{
+	font-family: Comfortaa;
+	color: black;
+}
+.desc-min > p{
+	font-family: Caveat, format('woff');
+	font-size: 25px;
+	color: black;
+}
+
+.im1{
+	background-image: url(img/teory1.jpg);
+}
+.im2{
+	background-image: url(img/teory2.jpg);
+}
+.im3{
+	background-image: url(img/teory3.jpg);
+}
+
+.button{
+	display: block;
+	height: 30px;
+	width: 90px;
+	text-align: center;
+	font-family: Caveat;
+	font-size: 20px;
+margin-left: 10px;
+	background-color: #c7ea8a;
+
+}
+.button1{
+	display: block;
+	height: 30px;
+	width: 300px;
+	text-align: center;
+	font-family: Caveat;
+	font-size: 20px;
+margin-left: 10px;
+	background-color: #c7ea8a;
+
+}
+
+/*inagine tab*/
+.imt1{
+	background-color: url(img/tab.png);
+}
+.imtask{
+	display: block;
+	height: 200px;
+	width: 300px;
+	margin-left: 30px;
+}
+.imtask1{
+	display: block;
+	height: 200px;
+	width: 400px;
+	margin-left: 30px;
+}
+.imtask2{
+	display: block;
+	height: 200px;
+	width: 600px;
+	margin-left: 30px;
+}
+footer > a{
+	display: block;
+	background-color: #e4efd1;
+	height: 30px;
+	float: right;
+	margin-right: 15px;
+	font-size: 25px;
+}
+.art1 > p{
+	font-size: 25px;
+}
+.art1 > i{
+	color: #6c2590;
+}
+b{
+	color: #6c2590;
+}
+
+.quizsection > p {
+	font-family: Caveat;
+	font-size: 30px;
+}
+.quizsection > i {
+	font-family: Caveat;
+	font-size: 30px;
+}
+
+.quizsection{
+	font-size: 25px;
+	margin-left: 30px;
+	font-family: Caveat;
+}
+.quizsection > button{
+	display: block;
+	margin-right: 40px;
+}
+.doch{
+	margin-left: 70px;
+}
+h2{
+	font-family: "Comfortaa";
+	margin-left: 20px;
+}
+h3{
+	font-family: "Comfortaa";
+	margin-left: 70px;
+}
+
+
+/*таблица*/
+table {
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+text-align: left;
+border-collapse: separate;
+border-spacing: 5px;
+background: #ECE9E0;
+color: #656665;
+border: 16px solid #ECE9E0;
+border-radius: 20px;
+margin: 20 20 20 20;
+}
+th {
+font-size: 18px;
+padding: 10px;
+}
+td {
+background: #F5D7BF;
+padding: 10px;
+}
+/*end*/
+.sod1 > p{
+	font-size: 25px;
+	line-height: 1;
+	float: left;
+	margin-left: 15px;
+}	
+
+@font-face{
+font-family: 'Comfortaa';
+src: url('fonts/Comfortaa-Medium.ttf');
+font-weight: normal;
+font-style: normal;
+
+}
+
+.hide {
+    display: none; 
+}
+.hide + label ~ div{
+    display: none;
+}
+/* оформляем текст label */
+.hide + label {
+    border-bottom: 1px dotted green;
+    padding: 0;
+    color: green;
+    cursor: pointer;
+    display: inline-block; 
+}
+/* вид текста label при активном переключателе */
+.hide:checked + label {
+    color: red;
+    border-bottom: 0;
+}
+/* когда чекбокс активен показываем блоки с содержанием  */
+.hide:checked + label + div {
+    display: block; 
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px; 
+
+}
+
+/* demo контейнер */
+.demo1 {
+	width: 520px;
+    margin: 5% 2%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.demo {
+    margin: 10px 5px;
+}
+
+.v1{
+	margin-left: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	0px;
+	margin-right: auto;
+}
